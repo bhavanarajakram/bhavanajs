@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Using es6</title>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		.text{
+			color: red;
+		font-family: cursive;
+		}
+		.sumbit1{
+			margin: 50px;
+			font-weight: bold;
+			background-color: pink;
+			font-size: 25px;
+			border-radius: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="col" id="col"></div>
+    <center><button id="btn">ClickInput</button></center>
+    <div  id="show"> <center><h1 class="text">Add Input Field using ES6</h1></center></div></div>
+<script type="text/javascript">
+	
+
+ var btn=document.getElementById("btn");
+  btn.addEventListener("click",()=>{
+  	document.getElementById('show').innerHTML+="<form onsubmit='return validate(this)'><div class='container p-3 my-3 bg-primary text-white'>Name:       <Input type='text'   size='12' data-toggle='tooltip' title='enter your name' placeholder='Enter Your Name' data-placement='bottom'></div><br> <div class='container p-3 my-3 bg-dark text-white'>Email:      <Input type='text'  size='12' data-toggle='tooltip' title='enter your Email' placeholder='Enter Your Email' data-placement='bottom'></div><br><div class='container p-3 my-3 bg-warning text-white'>Contact:        <Input type='number' size='12' data-toggle='tooltip' title='enter your number' placeholder='Enter Your Number' data-placement='bottom'></div><br><div class='container p-3 my-3 bg-danger text-white'>Place:            <Input type='text' size='12' data-toggle='tooltip' title='enter your Place' placeholder='Enter Your Place' data-placement='bottom'></div><br><center><Input type='submit' id='in1' class='sumbit1' size='12' data-toggle='tooltip' /></center></form>";      
+       })
+
+  var btn1=document.getElementById("in1");
+  btn1.addEventListener("click",()=>{ 
+  	document.write("thankyou!!!")
+  	})
+</script>
+</body>
+</html>
